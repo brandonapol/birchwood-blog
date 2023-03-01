@@ -14,25 +14,30 @@ const Home: NextPage = () => {
       className='flex flex-row justify-center mx-auto bg-cover bg-fixed h-screen shadow-2xl'
       >
         <div className='flex flex-col justify-center align-middle place-items-center text-white bg-black w-screen bg-opacity-30 rounded'>
-         <div className="font-italic lead flex flex-row">
-          <div className="hover:text-cadet transition duration-250">
-            <i className="far fa-envelope p-1"></i><a href="mailto:apolbrandon@gmail.com"> apolbrandon@gmail.com |</a>
+          <div className="font-italic lead flex flex-row sm:hidden md:flex">
+            <div className="hover:text-cadet transition duration-250">
+              <i className="far fa-envelope p-1"></i><a href="mailto:apolbrandon@gmail.com"> apolbrandon@gmail.com |</a>
+            </div>
+            <div className="hover:text-cadet transition duration-250">
+            <i className="fas fa-phone p-1"></i> (937)380-8954 | 
+            </div>
+            <div className="hover:text-cadet transition duration-250">
+            <i className="fab fa-github p-1"></i> <a href="https://github.com/brandonapol">github.com/brandonapol</a> |
+            </div>
+            <div className="hover:text-cadet transition duration-250">
+            <i className="fab fa-linkedin-in p-1"></i><a href="https://www.linkedin.com/in/brandonapol/"> Brandon Apol</a>
+            </div>
           </div>
-          <div className="hover:text-cadet transition duration-250">
-          <i className="fas fa-phone p-1"></i> (937)380-8954 | 
+          <div className="sm:flex sm:flex-row md:hidden">
+            <a href="mailto:apolbrandon@gmail.com"><i className="far fa-envelope p-1 hover:text-cadet transition duration-250"></i></a>
+            <a href="https://github.com/brandonapol"><i className="fab fa-github p-1 hover:text-cadet transition duration-250"></i></a>
+            <a href="https://www.linkedin.com/in/brandonapol/"><i className="fab fa-linkedin-in p-1 hover:text-cadet transition duration-250"></i></a>
           </div>
-          <div className="hover:text-cadet transition duration-250">
-          <i className="fab fa-github p-1"></i> <a href="https://github.com/brandonapol">github.com/brandonapol</a> |
-          </div>
-          <div className="hover:text-cadet transition duration-250">
-          <i className="fab fa-linkedin-in p-1"></i><a href="https://www.linkedin.com/in/brandonapol/"> Brandon Apol</a>
-          </div>
-         </div>
-            <h1 className="text-4xl font-bold p-5">
-              BRANDON APOL
-            </h1>
-            <p className="font-italic lead"><i className="fas fa-map-marker-alt"></i> Fairbanks, Alaska</p>
-            <p className="font-italic lead">Educator, Learner, Programmer, Musician</p>
+          <h1 className="text-4xl font-bold p-5">
+            BRANDON APOL
+          </h1>
+          <p className="font-italic lead"><i className="fas fa-map-marker-alt"></i> Fairbanks, Alaska</p>
+          <p className="font-italic lead">Educator, Learner, Programmer, Musician</p>
         </div>
         <div className="absolute bottom-0 left-0 w-full py-8 text-center">
           <svg className="animate-bounce w-6 h-6 mx-auto mt-4" fill="none" viewBox="0 0 24 24" stroke="rgb(156 163 175)">
@@ -73,7 +78,7 @@ const Home: NextPage = () => {
       className='bg-cover bg-fixed h-56 shadow-2xl'>
         
       </section>
-    <section className="bg-cadet pt-5 h-screen justify-center align-middle place-items-center">
+    <section className="bg-cadet pt-5  justify-center align-middle place-items-center">
       <div className="flex flex-col container mx-auto py-12 px-4 sm:px-6 lg:px-8 justify-center align-middle place-items-center">
         <div className="p-5 border-b-2 border-rose">
           <h2 className="text-3xl font-bold">SKILLS</h2>
@@ -129,8 +134,8 @@ const Home: NextPage = () => {
       className='bg-cover bg-fixed h-56 shadow-2xl'>
         
     </section>
-    <section className="bg-linen pt-5 h-screen justify-center align-middle place-items-center">
-      <div className="flex flex-col container mx-auto py-12 px-4 sm:px-6 lg:px-8 justify-center align-middle place-items-center">
+    <section className="bg-linen py-5  justify-center align-middle place-items-center">
+      <div className="flex flex-col container mx-auto py-6 px-4 sm:px-6 lg:px-8 justify-center align-middle place-items-center">
         <header className="text-center mb-5">
           <h2 className="text-3xl p-3 text-rose border-b-2 border-rose">Highlighted Work</h2>
         </header>
@@ -155,8 +160,23 @@ const Home: NextPage = () => {
         </div>
       </div>
     </section>
-    <section>
-      
+    <section className="bg-eerie py-5 text-white md:h-screen sm:h-auto justify-center align-middle place-items-center">
+        <header className="text-center mb-5">
+          <h2 className="text-3xl p-3 border-b-2 border-gray-600">Other Stuff About Me</h2>
+        </header>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+          <iframe src="https://open.spotify.com/embed/album/2IoqqeZojxqSfJo4ll688L" width="100%" height="380" frameBorder="0" allow="encrypted-media" loading="lazy"></iframe>
+          </div>
+          <div>
+            <p className="text-white">I have a lot of interests! I do a lot of stuff!</p>
+            <br></br>
+            <p className="text-white">I enjoy rock climbing, music theory, cross country skiing, spending time with my wife, learning about functional programming, swanky coffee, farming, mountaineering (and generally being on top of things), bicycling, ice fishing, church history, books by Dietrich Bonhoeffer, and more!</p>
+            <br></br>
+            <p className="text-white">I also was a music teacher and I still play music and teach for fun! On the left is an album I co-produced while I was in college, and I hope you give it a listen.</p>
+          </div>
+        </div>
+
     </section>
     <section
       style={{ backgroundImage: `url(${ Background.src })` }}

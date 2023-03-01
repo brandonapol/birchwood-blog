@@ -6,3 +6,11 @@
     width: 0;
     height: 0;
 }
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #536373;
+}

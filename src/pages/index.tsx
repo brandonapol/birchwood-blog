@@ -160,20 +160,22 @@ const Home: NextPage = () => {
         </div>
       </div>
     </section>
-    <section className="bg-eerie py-5 text-white md:h-screen sm:h-auto justify-center align-middle place-items-center">
-        <header className="text-center mb-5">
-          <h2 className="text-3xl p-3 border-b-2 border-gray-600">Other Stuff About Me</h2>
-        </header>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-          <iframe src="https://open.spotify.com/embed/album/2IoqqeZojxqSfJo4ll688L" width="100%" height="380" frameBorder="0" allow="encrypted-media" loading="lazy"></iframe>
-          </div>
-          <div>
-            <p className="text-white">I have a lot of interests! I do a lot of stuff!</p>
-            <br></br>
-            <p className="text-white">I enjoy rock climbing, music theory, cross country skiing, spending time with my wife, learning about functional programming, swanky coffee, farming, mountaineering (and generally being on top of things), bicycling, ice fishing, church history, books by Dietrich Bonhoeffer, and more!</p>
-            <br></br>
-            <p className="text-white">I also was a music teacher and I still play music and teach for fun! On the left is an album I co-produced while I was in college, and I hope you give it a listen.</p>
+    <section className="bg-eerie py-8 text-white sm:h-auto justify-center align-middle place-items-center">
+        <div className="flex flex-col container mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <header className="text-center mb-5">
+            <h2 className="text-3xl p-3 border-b-2 border-gray-600">Other Stuff About Me</h2>
+          </header>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+            <iframe src="https://open.spotify.com/embed/album/2IoqqeZojxqSfJo4ll688L" width="100%" height="380" frameBorder="0" allow="encrypted-media" loading="lazy"></iframe>
+            </div>
+            <div>
+              <p className="text-white">I have a lot of interests! I do a lot of stuff!</p>
+              <br></br>
+              <p className="text-white">I enjoy rock climbing, music theory, cross country skiing, spending time with my wife, learning about functional programming, swanky coffee, farming, mountaineering (and generally being on top of things), bicycling, ice fishing, church history, books by Dietrich Bonhoeffer, and more!</p>
+              <br></br>
+              <p className="text-white">I also was a music teacher and I still play music and teach for fun! On the left is an album I co-produced while I was in college, and I hope you give it a listen.</p>
+            </div>
           </div>
         </div>
 
@@ -182,6 +184,55 @@ const Home: NextPage = () => {
       style={{ backgroundImage: `url(${ Background.src })` }}
       className='bg-cover bg-fixed h-56 shadow-2xl'>
         
+    </section>
+    <section>
+    <div className="flex md:h-full p-5 pt-8 items-center sm:h-auto justify-center align-middle place-items-center bg-slate-800">
+      <div className="container">
+        <header className="text-center mb-5">
+          <h2 className="text-white border-b-2 border-gray-600">Find Me</h2>
+        </header>
+        <div className="flex justify-center">
+          <ul className="list-none m-0 p-0 flex">
+            <li className="mx-2">
+              <a href="https://www.facebook.com/bapol1/" className="inline-block p-4 rounded-full bg-slate-200 text-black hover:text-white hover:bg-slate-500 transition duration-200" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li className="mx-2">
+              <a href="https://twitter.com/_BrandonApol" className="inline-block p-4 rounded-full bg-slate-200 text-black hover:text-white hover:bg-slate-500  transition duration-200" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li className="mx-2">
+              <a href="https://github.com/brandonapol" className="inline-block p-4 rounded-full bg-slate-200 text-black hover:text-white hover:bg-slate-500  transition duration-200" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i>
+              </a>
+            </li>
+            <li className="mx-2">
+              <a href="https://www.instagram.com/brandonapol/" className="inline-block p-4 rounded-full bg-slate-200 text-black hover:text-white hover:bg-slate-500  transition duration-200" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li className="mx-2">
+              <a href="mailto: brandonapol@cedarville.edu" className="inline-block p-4 rounded-full bg-slate-200 text-black hover:text-white hover:bg-slate-500  transition duration-200" target="_blank" rel="noopener noreferrer">
+                <i className="fas fa-envelope"></i>
+              </a>
+            </li>
+            <li className="mx-2">
+              <a href="https://calendly.com/brandonapol/30min" className="inline-block p-4 rounded-full bg-slate-200 text-black hover:text-white hover:bg-slate-500 transition duration-200" target="_blank" rel="noopener noreferrer">
+                <i className="far fa-calendar-alt"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <footer className="py-5 mt-5">
+          <div className="text-center">
+            <p className="italic text-gray-600">&copy; Brandon Apol</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
     </section>
     </>
   );

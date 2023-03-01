@@ -4,6 +4,7 @@ import Climbing from '../../public/assets/IMG_2328.JPG'
 import Profile from '../../public/assets/profile.jpeg'
 import Boats from '../../public/assets/IMG_0570.jpeg'
 import Cabin from '../../public/assets/IMG_1843.jpeg'
+import Link from "next/link";
 
 const Home: NextPage = () => {
   
@@ -62,12 +63,12 @@ const Home: NextPage = () => {
                 I specialize in building responsive and scalable web applications using modern web technologies.
               </p>
               <div className="mt-8">
-                <a
-                  href="#"
+                <Link href="/blog" 
                   className="text-base font-medium text-cadet bg-slate-900 p-3 rounded transition duration-250 hover:border-black hover:bg-slate-200 hover:text-black"
                 >
                   Read my blog &rarr;
-                </a>
+
+                </Link>
               </div>
             </div>
           </div>

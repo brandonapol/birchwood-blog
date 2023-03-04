@@ -7,7 +7,7 @@ import Cabin from '../../public/assets/IMG_1843.jpeg'
 import Link from "next/link";
 
 const Home: NextPage = () => {
-  
+  // TODO - organize into components
   return (
     <>
     <section 

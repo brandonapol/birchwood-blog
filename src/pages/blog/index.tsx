@@ -30,7 +30,11 @@ const BlogMain = ({ final }: BlogProps ) => {
 }
 
 export async function getStaticProps() {
-  const response = await fetch('http://localhost:8000/api/blog',
+  if (!process.env.NEXT_PUBLIC_API_URL) {
+    throw new Error('Cannot find API url')
+  }
+  const apiUrl: string = process.env.NEXT_PUBLIC_API_URL
+  const response = await fetch(`${apiUrl}/api/blog`,
     {
       method: 'GET',
       headers: {

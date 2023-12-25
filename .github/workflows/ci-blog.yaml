@@ -1,0 +1,45 @@
+name: Birchwood Blog CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-lint:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]  # Update this to the Node.js version you want to use
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Lint
+      run: npm run lint
+
+    - name: Build (Local)
+      run: npm run build:local
+      env:
+        # Define environment variables if needed for local build
+        MY_ENV_VAR: value
+
+    - name: Build (Production)
+      run: npm run build:prod
+      env:
+        # Define environment variables if needed for production build
+        MY_ENV_VAR: value
+
+    # Include additional steps as necessary, such as running tests or deploying
+

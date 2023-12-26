@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <>
     <section 
-      style={{ backgroundImage: `url(${ Background })` }}
+      style={{ backgroundImage: `url(${ Background.src })` }}
       className='flex flex-row justify-center mx-auto bg-cover bg-fixed h-screen shadow-2xl'
       >
         <div className='flex flex-col justify-center align-middle place-items-center text-white bg-black w-screen bg-opacity-30 rounded'>

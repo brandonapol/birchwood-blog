@@ -29,10 +29,10 @@ jobs:
     # - name: Lint
     #   run: npm run lint
 
-    - name: Build (Local)
-      run: npm run build:local
-      env:
-        NEXT_PUBLIC_API_URL: ""
+    # - name: Build (Local)
+    #   run: npm run build:local
+    #   env:
+    #     NEXT_PUBLIC_API_URL: ""
 
     - name: Build (Production)
       run: npm run build:prod

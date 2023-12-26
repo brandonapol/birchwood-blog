@@ -1,6 +1,6 @@
 import React from 'react'
 
-export interface Blog {
+export type Blog = {
     title: string;
     author: string;
     content: string;

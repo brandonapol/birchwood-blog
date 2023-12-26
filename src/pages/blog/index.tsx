@@ -1,7 +1,7 @@
 import BlogLoop, { Blog } from '~/components/BlogLoop';
 import Link from 'next/link';
 
-interface BlogProps {
+type BlogProps = {
   final: object
 }
 
@@ -28,25 +28,32 @@ const BlogMain = ({ final }: BlogProps ) => {
     </div>
   </div> )
 }
-
-export async function getStaticProps() {
+//! you will need to set this as async
+export function getStaticProps() {
   if (!process.env.NEXT_PUBLIC_API_URL) {
     throw new Error('Cannot find API url')
   }
   const apiUrl: string = process.env.NEXT_PUBLIC_API_URL
-  const response = await fetch(`${apiUrl}/api/blog`,
-    {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+  // const response = await fetch(`${apiUrl}/api/blog`,
+  //   {
+  //     method: 'GET',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //   });
 
-    if (!response.ok) {
-      throw new Error('Unable to get data')
+  //   if (!response.ok) {
+  //     throw new Error('Unable to get data')
+  //   }
+
+    // const final: Blog = await response.json() as Blog;
+    const final: Blog = {
+      title: "string",
+      author: "string",
+      content: "string",
+      createdAt: "string",
+      updatedAt: "string"
     }
-
-    const final = await response.json()
 
     return {
       props: { 

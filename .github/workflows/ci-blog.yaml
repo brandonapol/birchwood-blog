@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x]  # Update this to the Node.js version you want to use
+        node-version: [20.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -32,14 +32,20 @@ jobs:
     - name: Build (Local)
       run: npm run build:local
       env:
-        # Define environment variables if needed for local build
-        MY_ENV_VAR: value
+        NEXT_PUBLIC_API_URL: ""
+        NEXTAUTH_SECRET: ""
+        NEXTAUTH_URL: ""
+        DISCORD_CLIENT_ID: ""
+        DISCORD_CLIENT_SECRET: ""
 
     - name: Build (Production)
       run: npm run build:prod
       env:
-        # Define environment variables if needed for production build
-        MY_ENV_VAR: value
+        NEXT_PUBLIC_API_URL: http://blogservice.k8s.brandon.com
+        NEXTAUTH_SECRET: ""
+        NEXTAUTH_URL: ""
+        DISCORD_CLIENT_ID: ""
+        DISCORD_CLIENT_SECRET: ""
 
-    # Include additional steps as necessary, such as running tests or deploying
+
 

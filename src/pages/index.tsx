@@ -1,13 +1,12 @@
 import { type NextPage } from "next";
-import Background from '../../public/assets/IMG_2035.JPG'
-import Climbing from '../../public/assets/IMG_2328.JPG'
+import Background from '../../public/assets/0F56DE24-08B4-493C-9FFF-D0CD7797EDE7.jpeg'
+import Climbing from '../../public/assets/88153C59-4E6D-45EF-9830-CCD453FAD693_1_105_c.jpeg'
 import Profile from '../../public/assets/profile.jpeg'
 import Boats from '../../public/assets/IMG_0570.jpeg'
 import Cabin from '../../public/assets/IMG_1843.jpeg'
 import Link from "next/link";
 
 const Home: NextPage = () => {
-  // TODO - organize into components
   return (
     <>
     <section 
@@ -56,10 +55,10 @@ const Home: NextPage = () => {
             </div>
             <div className="md:order-1">
               <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Hi, I'm Brandon.
+                Hi, I&apos;m Brandon.
               </h2>
               <p className="mt-4 text-gray-600">
-                I'm a web developer from Alaska. Sometimes I live in Seattle or Ohio. 
+                I&apos;m a web developer from Alaska. Sometimes I live in Seattle or Ohio. 
                 I specialize in building responsive and scalable web applications using modern web technologies.
               </p>
               <div className="mt-8">
@@ -150,10 +149,10 @@ const Home: NextPage = () => {
           </div>
           <div className="p-6 bg-white rounded-lg shadow-md">
             <h4 className="text-lg font-bold mb-2"><a href="https://github.com/brandonapol/Final-Project-API-API" className="text-rose transition duration-200 hover:text-slate-200 hover:bg-slate-800 p-2">Flask App Generator</a></h4>
-            <p className="text-gray-700 mb-4">This project was my response to observing that most Flask apps were basically identical, so I made a full stack app that zipped a template Flask app and downloaded it. It's saved me more time than I even thought it would.</p>
+            <p className="text-gray-700 mb-4">This project was my response to observing that most Flask apps were basically identical, so I made a full stack app that zipped a template Flask app and downloaded it. It&apos;s saved me more time than I even thought it would.</p>
             <div className="my-6 border-b-2 border-gray-300"></div>
             <h4 className="text-lg font-bold mb-2"><a href="codingtemple.com/self-paced/" className="text-rose transition duration-200 hover:text-slate-200 hover:bg-slate-800 p-2">Coding Temple: Self-Paced Course</a></h4>
-            <p className="text-gray-700 mb-4">Over the course of two months, I created and delivered a self-paced version of Coding Temple's full-time live bootcamp course, which delivered a return on investment of over 30:1. I tutored students in code for the following 7 months while building other projects for the company.</p>
+            <p className="text-gray-700 mb-4">Over the course of two months, I created and delivered a self-paced version of Coding Temple&apos;s full-time live bootcamp course, which delivered a return on investment of over 30:1. I tutored students in code for the following 7 months while building other projects for the company.</p>
             <div className="my-6 border-b-2 border-gray-300"></div>
             <h4 className="text-lg font-bold mb-2"><a href="#" className="text-rose transition duration-200 hover:text-slate-200 hover:bg-slate-800 p-2">Coding Temple: Self-Paced Data Course</a></h4>
             <p className="text-gray-700">In-process: Creating and delivering a brand-new Data Analysis self-paced course for Coding Temple. Learned new technologies and made educational content for each technology learned.</p>

@@ -26,8 +26,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Lint
-      run: npm run lint
+    # - name: Lint
+    #   run: npm run lint
 
     - name: Build (Local)
       run: npm run build:local

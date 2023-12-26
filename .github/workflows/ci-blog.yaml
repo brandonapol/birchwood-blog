@@ -33,19 +33,11 @@ jobs:
       run: npm run build:local
       env:
         NEXT_PUBLIC_API_URL: ""
-        NEXTAUTH_SECRET: "shutup"
-        NEXTAUTH_URL: "shutup"
-        DISCORD_CLIENT_ID: "shutup"
-        DISCORD_CLIENT_SECRET: "shutup"
 
     - name: Build (Production)
       run: npm run build:prod
       env:
         NEXT_PUBLIC_API_URL: http://blogservice.k8s.brandon.com
-        NEXTAUTH_SECRET: "shutup"
-        NEXTAUTH_URL: "shutup"
-        DISCORD_CLIENT_ID: "shutup"
-        DISCORD_CLIENT_SECRET: "shutup"
 
 
 

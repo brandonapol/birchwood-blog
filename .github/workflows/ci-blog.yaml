@@ -37,7 +37,7 @@ jobs:
     - name: Build (Production)
       run: npm run build:prod
       env:
-        NEXT_PUBLIC_API_URL: http://blogservice.k8s.brandon.com
+        NEXT_PUBLIC_API_URL: localhost:3000
 
 
 

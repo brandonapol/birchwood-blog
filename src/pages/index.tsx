@@ -1,6 +1,6 @@
 import { type NextPage } from "next";
-import Background from '../../public/assets/0F56DE24-08B4-493C-9FFF-D0CD7797EDE7.jpeg'
-import Climbing from '../../public/assets/88153C59-4E6D-45EF-9830-CCD453FAD693_1_105_c.jpeg'
+import Climbing from '../../public/assets/0F56DE24-08B4-493C-9FFF-D0CD7797EDE7.jpeg'
+import Background from '../../public/assets/88153C59-4E6D-45EF-9830-CCD453FAD693_1_105_c.jpeg'
 import Profile from '../../public/assets/profile.jpeg'
 import Boats from '../../public/assets/IMG_0570.jpeg'
 import Cabin from '../../public/assets/IMG_1843.jpeg'

@@ -34,6 +34,16 @@ export async function getStaticProps() {
     throw new Error('Cannot find API url')
   }
   const apiUrl: string = process.env.NEXT_PUBLIC_API_URL
+  if (apiUrl.includes('localhost')) {
+    const final: Blog = {
+      "title": "string",
+      "author": "string",
+      "content": "string",
+      "createdAt": "string",
+      "updatedAt": "string",
+    }
+    return final;
+  }
   const response = await fetch(`${apiUrl}/api/blog`,
     {
       method: 'GET',

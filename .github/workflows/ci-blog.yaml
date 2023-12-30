@@ -5,6 +5,8 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
+    
 
 jobs:
   build-and-lint:
@@ -38,6 +40,13 @@ jobs:
       run: npm run build
       env:
         NEXT_PUBLIC_API_URL: http://localhost:3000
+
+    - name: Blog CI Trigger
+      uses: actions/setup-node@v2
+      with:
+        repository: brandonapol/birchwood-blog
+        event-type: trigger-child-ci
+
 
 
 
